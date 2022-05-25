@@ -28,11 +28,11 @@ def getTrimesteData(account_token, account_data):
     if trimestre == 1:
         getDataOfTrimestre = data['data']['periodes'][0]
     elif trimestre == 2:
-        getDataOfTrimestre = data['data']['periodes'][2]
+        getDataOfTrimestre = data['data']['periodes'][1]
     elif trimestre == 3:
-        getDataOfTrimestre = data['data']['periodes'][4]
+        getDataOfTrimestre = data['data']['periodes'][2]
     elif trimestre == 4:
-        getDataOfTrimestre = data['data']['periodes'][5]
+        getDataOfTrimestre = data['data']['periodes'][3]
 
     clotured = getDataOfTrimestre['cloture']
     class_average = getDataOfTrimestre['ensembleMatieres']['moyenneClasse']
